@@ -1,0 +1,78 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+}
+section {
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+width: 100%;
+margin-top: 50px;
+margin-left: 0;
+margin-right: 0;
+background: #3c8c8f;
+/* background: url("C:\Users\jayes\Desktop\project-images\dark.jpg")no-repeat; */
+background-position: center;
+background-size: cover;
+}
+.form-box {
+    position: relative;
+    width: 500px;
+    height: auto;
+    background: transparent;
+    border: 2px solid rgba(255, 255,255, 0.5);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+
+
+}
+.inputbox {
+    position: relative;
+    margin: 10px;
+    width: 400px;
+    border-bottom: 2px solid white;
+}
+input{
+    color: white;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+.inputbox label{
+    position: absolute;
+    top: 5%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+input:focus ~ label,
+input:valid ~ label{
+  top: -5px;
+}
+.inputbox input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+button{
+    width: 40%;
+    height: 40px;
+    border-radius: 40px;
+    background: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    margin: 5px;
+}
